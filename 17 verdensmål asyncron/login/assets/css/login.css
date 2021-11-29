@@ -1,0 +1,21 @@
+fieldset {
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+
+fieldset form input {
+  display: block;
+  padding: 1vh;
+  margin: 2vh;
+  width: 300px;
+}
+
+fieldset form label {
+  margin: 2vh;
+}
+
+fieldset form button {
+  margin: 2vh;
+  cursor: pointer;
+}

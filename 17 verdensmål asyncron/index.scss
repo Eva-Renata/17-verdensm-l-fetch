@@ -1,0 +1,147 @@
+body {
+    margin: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    background-color: #eee;
+    //det gør at der ikke er to scoll bar når vi har åbnet vores modal
+    &.noScoll{
+        overflow-y: hidden;
+    }
+}
+.header {
+    h1 {
+        text-align: center;
+    }
+}
+.main.container {
+    .goalcontainer {
+        display: grid;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        margin: auto;
+        width:80%;
+        .goal {
+            position: relative;
+            margin:5%;
+            height:30vh;
+            width: auto;
+            h2 {
+                font-size: 3vh;
+                text-align: center;
+                color: white;
+            }
+            .image {
+                fill:white;
+                svg {
+                    display: block;
+                    margin: auto;
+                    padding:10%;
+                    height: 10vh;
+                    width: auto;
+                }
+            }
+            a {
+                position: absolute;
+                bottom:0;
+                padding:3vh;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+}
+#details {
+    position: fixed;
+    top:0;
+    z-index: 2;
+    width:100%;
+    border: solid 1px black;
+    display: none;
+    overflow: scroll; 
+    margin-bottom: 10%;
+    img, svg {
+        width: 50%;
+        display: block;
+        margin:auto;
+        padding:3vh;
+    }
+    button {
+        position: absolute;
+        top:5%;
+        right:5%;
+        border: none;
+        font-size: 5vh;
+    }
+    
+    &.active {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow:scroll;
+    }
+    h2, h3 {
+        text-align: center;
+
+    }
+    svg {
+        width: 10%;
+        fill:white;
+    }
+    p {
+        width: 80%;
+        margin: auto;
+    }
+    .targets {
+        padding-bottom: 5%;
+    }
+}
+
+.footer {
+    text-align: center;
+}
+
+
+//TABLET media queries
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .main.container {
+        .goalcontainer {
+            display: grid;
+            grid-template-columns:auto auto auto;
+            .goal {
+                height:40vh;
+                h2 {
+                    font-size: 4vh;
+                }
+            }
+        }
+    }
+    
+}
+
+//MOBIL media queries
+@media screen and (max-width: 800px) {
+    .main.container {
+        .goalcontainer {
+            display: grid;
+            grid-template-columns:auto;
+            .goal {
+                height: 40vh;
+                h2 {
+                    font-size: 4vh;
+                }
+            }
+        }
+    }
+    #details {
+        svg {
+            width: 40%;
+            display: block;
+            margin:auto;
+            
+        }
+        img {
+            width: 90%;
+        }
+    }
+}

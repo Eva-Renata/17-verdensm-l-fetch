@@ -1,0 +1,30 @@
+fieldset {
+    width: 300px;
+    display: block;
+    margin: auto;
+    
+    form {
+        display: block;
+        input {
+            display: block;
+            padding:1vh;
+            margin:2vh;
+            width:300px;
+        }
+        label {
+            margin:2vh;
+        }
+        button {
+            margin:2vh;
+            cursor: pointer;
+        }
+     }
+}
+table {
+    width:100%;
+    border: solid 1px gray;
+    margin-top:5vh;
+    * {
+        border: solid 1px gray;
+    }
+}

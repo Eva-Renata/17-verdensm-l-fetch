@@ -1,0 +1,9 @@
+.goalmodal {
+  border: solid 1px grey;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: lightgray;
+  display: none;
+}
